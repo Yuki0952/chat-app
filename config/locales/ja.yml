@@ -1,0 +1,4 @@
+ja:
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S" #時間設定年/月/日　時間/分/秒
