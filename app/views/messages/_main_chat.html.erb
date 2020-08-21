@@ -6,14 +6,15 @@
   </div>
   <div class="right-header">
     <div class="header-button">
-      <a href="#">チャットを終了する</a>
+      <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
     </div>
   </div>
 </div>
 
 <div class="messages">
-  <%= render partial: 'message',collection: @messages %>   # collectionオプションに指定したインスタンス変数の中にある要素の分だけ部分テンプレートが繰り返し表示される
+  <%= render partial: 'message', collection: @messages %>
 </div>
+
 
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
